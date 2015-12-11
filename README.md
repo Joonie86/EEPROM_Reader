@@ -10,8 +10,5 @@ Major thanks to @haxxxen whom provided the original source.
 
 Credits
 
-Zecoxao
-ZeroTolerance
-Habib
-mysis
+Haxxxen, Zecoxao, ZeroTolerance, Habib, mysis and those of you whom I owe creidts to.
 
