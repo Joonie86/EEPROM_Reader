@@ -21,10 +21,10 @@
 
 void patch_hv_checks(){
 	// peek and poke dynamically lv1 - no more toc/fw check needed ^_^
-	u64 auth_check=0x16FB64; //auth_check poke-offset CEX/DEX 4.75
-	u64 write_eeprom=0xFEBD4; //eeprom_write_access poke-offset CEX/DEX 4.75
+	u64 auth_check=0x177B64; //auth_check poke-offset DECR 4.60
+	u64 write_eeprom=0x706BD4; //eeprom_write_access poke-offset DECR 4.60
 	
-	lv2_lv1_poke(0xFC4D8, 0x2f8000032F800003ULL);
+	lv2_lv1_poke(0x7044D8, 0x2f8000032F800003ULL);
 	
 	if(lv2_lv1_peek(auth_check)!=0x2F800000409E0050ULL){ //(1st) patch pattern - if no match, search lv1
 		auth_check=0;
